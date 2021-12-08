@@ -11,8 +11,9 @@ Basic app template to build NeutralinoJs and NGX application
 Here are the technologies used in this project.
 
 - Neutralinojs version 2.0.0
-- Angular version 12.2.0
+- Angular version 13.0.3
 - neu CLI version 7.0.0
+- Node version 17.2.3
 
 ## Services Used
 
