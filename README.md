@@ -22,7 +22,7 @@ Here are the technologies used in this project.
 
 ## Getting started
 
-- To run:
+- To build:
   > \$ sh build.sh
 
 ## Icon credits
