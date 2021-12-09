@@ -5,7 +5,7 @@ window.myApp = {
       return;
     }
     let tray = {
-      icon: "/resources/icons/trayIcon.png",
+      icon: "/resources/assets/icons/trayIcon.png",
       menuItems: [
         { id: "VERSION", text: "Get version" },
         { id: "SEP", text: "-" },

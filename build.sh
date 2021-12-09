@@ -7,6 +7,6 @@ echo "\n$(tput setaf 2)[Stage 2 - Build angular app]$(tput sgr0)\n" && \
 ng build --base-href /resources/ && cd .. && \
 echo "\n$(tput setaf 2)[Stage 3 - Build desktop app]$(tput sgr0)\n" && \
 neu update && \
-neu build && \
+neu build
 # echo "\n$(tput setaf 2)[Stage 4 - Clear workspace]$(tput sgr0)\n" && \
 # rm -rf ./resources
