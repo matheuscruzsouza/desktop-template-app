@@ -34,15 +34,11 @@
       "globalVariables": {
         "TEST": "Test value browser"
       },
-      "nativeBlockList": [
-        "filesystem.*"
-      ]
+      "nativeBlockList": ["filesystem.*"]
     },
     "cloud": {
       "url": "/resources/#cloud",
-      "nativeAllowList": [
-        "app.*"
-      ]
+      "nativeAllowList": ["app.*"]
     }
   },
   "cli": {

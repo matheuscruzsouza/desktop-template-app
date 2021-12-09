@@ -8,5 +8,5 @@ ng build --base-href /resources/ && cd .. && \
 echo "\n$(tput setaf 2)[Stage 3 - Build desktop app]$(tput sgr0)\n" && \
 neu update && \
 neu build && \
-echo "\n$(tput setaf 2)[Stage 4 - Clear workspace]$(tput sgr0)\n" && \
-rm -rf ./resources
+# echo "\n$(tput setaf 2)[Stage 4 - Clear workspace]$(tput sgr0)\n" && \
+# rm -rf ./resources
