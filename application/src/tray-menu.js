@@ -19,7 +19,7 @@ window.myApp = {
       case "VERSION":
         Neutralino.os.showMessageBox(
           "Version information",
-          `Neutralinojs server: v${NL_VERSION} | Neutralinojs client: v${NL_CVERSION}`
+          `Desktop Template App: v${NL_DESKTOP_TEMPLATE_APP}`
         );
         break;
       case "QUIT":
