@@ -22,6 +22,10 @@ Here are the technologies used in this project.
 
 ## Getting started
 
+- Right after clone, run:
+
+  > \$ sh config.sh
+
 - To build:
   > \$ sh build.sh
 
