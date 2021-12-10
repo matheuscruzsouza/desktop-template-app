@@ -22,3 +22,5 @@ rm -rf .git > /dev/null
 git init > /dev/null
 
 echo "$(tput setaf 2)[Well the project is ready.]$(tput sgr0)\n"
+
+rm -rf ./config.sh
