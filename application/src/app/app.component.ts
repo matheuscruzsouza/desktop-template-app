@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TrayMenuService } from './shared/service/tray-menu.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'application';
+
+  constructor(private trayMenuService: TrayMenuService){}
+
 }

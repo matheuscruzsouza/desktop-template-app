@@ -5,6 +5,8 @@
 /bin
 /dist
 /resources
+/application/.angular
+/application/node_modules
 
 # Neutralinojs related files
 .storage
