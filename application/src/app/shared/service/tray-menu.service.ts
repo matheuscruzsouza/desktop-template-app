@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { CoreService } from './core.service';
 
 declare const Neutralino: any;
 declare const NL_OS: string, NL_MODE: string;
@@ -17,18 +18,22 @@ export class TrayMenuService {
     ],
   };
 
-  constructor() {
-    Neutralino.init();
+  constructor(private coreService: CoreService) {
 
-    Neutralino.events.on("trayMenuItemClicked", (event: any) => {
+    this.coreService.trayMenu.itemClicked.subscribe( (event: any) => {
       this.onTrayMenuItemClicked(event, this.trayMenu.menuItems)
     });
-    Neutralino.events.on("windowClose", this.onWindowClose);
-    Neutralino.events.on("ready", () => {
+
+    this.coreService.window.closed.subscribe(() => {
+      this.onWindowClose()
+    });
+
+    this.coreService.ready.subscribe(() => {
       if (NL_OS != "Darwin") {
         this.setTray();
       }
     });
+
   }
 
   setTray() {
