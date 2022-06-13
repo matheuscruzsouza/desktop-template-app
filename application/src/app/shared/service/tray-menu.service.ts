@@ -68,4 +68,8 @@ export class TrayMenuService {
       isVisible ? Neutralino.window.hide() : Neutralino.window.show();
     });
   }
+
+  onGetPosition(): Promise<any> {
+    return Neutralino.window.getPosition();
+  }
 }

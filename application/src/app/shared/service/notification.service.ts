@@ -8,12 +8,12 @@ declare const NL_PATH: string;
 })
 export class NotificationService {
 
-  async showNotification(text: string, content: string) {
+  async showNotification(title: string, content: string, icon: string = "base-app.png", time: string = "5000") {
     await Neutralino.os.execCommand(`gdbus call --session \
     --dest=org.freedesktop.Notifications \
     --object-path=/org/freedesktop/Notifications \
     --method=org.freedesktop.Notifications.Notify \
-    "" 0 '${NL_PATH}/wallpaper-changer.png' '${text}' '${content}' \
-    '[]' '{"urgency": <1>}' 5000`, { background: true });
+    "" 0 '${NL_PATH}/${icon}' '${title}' '${content}' \
+    '[]' '{"urgency": <1>}' ${time}`, { background: true });
   }
 }

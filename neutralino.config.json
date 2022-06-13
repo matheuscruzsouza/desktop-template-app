@@ -45,7 +45,7 @@
     "binaryName": "base-app",
     "resourcesPath": "/resources/",
     "clientLibrary": "/resources/neutralino.js",
-    "binaryVersion": "3.0.0",
-    "clientVersion": "2.0.0"
+    "binaryVersion": "4.6.0",
+    "clientVersion": "4.6.0"
   }
 }

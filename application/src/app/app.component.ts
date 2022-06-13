@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { NotificationService } from './shared/service/notification.service';
 import { TrayMenuService } from './shared/service/tray-menu.service';
 
 @Component({
@@ -9,6 +11,9 @@ import { TrayMenuService } from './shared/service/tray-menu.service';
 export class AppComponent {
   title = 'application';
 
-  constructor(private trayMenuService: TrayMenuService){}
+  constructor(
+    private trayMenuService: TrayMenuService,
+    private notificationService: NotificationService
+  ){ }
 
 }
